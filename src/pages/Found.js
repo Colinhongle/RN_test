@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View,Text, Button } from 'react-native'
 
-class Home extends Component {
+class Found extends Component {
 
   onPress=()=>{
     const {navigation}=this.props
@@ -14,7 +14,7 @@ class Home extends Component {
     return (
       <View>
         <Text>
-          我是Home
+          我是Found
         </Text>
         <Button title="跳转到详情页" onPress={this.onPress}></Button>
       </View>
@@ -22,4 +22,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default Found

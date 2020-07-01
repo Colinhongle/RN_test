@@ -1,16 +1,21 @@
 import React, { Component } from 'react'
-import { View,Text } from 'react-native'
+import { View, Text } from 'react-native'
 
-class detail extends Component {
+class Detail extends Component {
+
   render() {
+
+    const { route } = this.props;
+    const { id,name } = route.params;
+
     return (
       <View>
         <Text>
-          我是detail
+          我是detail,ID是：{id},{name}
         </Text>
       </View>
     )
   }
 }
 
-export default detail
+export default Detail
