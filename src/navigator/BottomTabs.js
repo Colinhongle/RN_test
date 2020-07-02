@@ -33,6 +33,13 @@ function getHeaderTitle(route) {
 
 class BottomTabs extends Component {
   
+  componentDidMount() {
+    const { navigation,route } = this.props;
+    navigation.setOptions({
+      headerTitle: '首页',
+    })
+  }
+
   componentDidUpdate() {
     const { navigation,route } = this.props;
     let showBar=true
